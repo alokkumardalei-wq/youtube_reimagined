@@ -1,73 +1,24 @@
-# React + TypeScript + Vite
+# YouTube Reimagined 📺✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, privacy-focused YouTube experience designed to help you consume content more intentionally. This project reimagines the video consumption interface with powerful tools to reduce distractions and enhance learning.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🧠 Free & Private AI Companion
+- **100% Local AI**: Built-in AI that runs entirely in your browser. No data is sent to the cloud.
+- **Instant Summaries**: Get concise notes, key takeaways, and definitions for any video instantly.
+- **Fact Checking**: Verify claims made in videos in real-time.
+- **No API Keys**: Powered by local models (`Transformers.js`), completely free to use.
 
-## React Compiler
+### 🎯 Focus Mode
+- **Distraction Blocking**: Whitelist specific channels, categories, or keywords to filter out noise.
+- **Blue Light Filter**: Integrated amber overlay to reduce eye strain during late-night sessions.
+- **Session Timer**: Set strict time limits for your viewing sessions to prevent doom-scrolling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎨 Modern Aesthetic
+- **Premium UI**: sleek, dark-mode interface with glassmorphism effects and smooth animations.
+- **Fluid Navigation**: Intuitive sidebar and categorized feeds for a superior user experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*Reimagining how we watch, learn, and focus.*
