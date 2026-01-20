@@ -1,0 +1,46 @@
+:root {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #272727; /* Sidebar active, input bg */
+  --bg-hover: #3f3f3f;
+  --text-primary: #f1f1f1;
+  --text-secondary: #aaaaaa;
+  --accent-color: #ff0000; /* YouTube Red */
+  --border-color: #303030;
+  --sidebar-width: 240px;
+  --header-height: 56px;
+  --card-gap: 16px;
+  --card-min-width: 300px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #717171;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
